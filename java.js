@@ -11,12 +11,12 @@ function comprobarNumero(numero) {
   intentos++;
 
   if (numero === numeroAdivinar) {
-    console.log(`¡Felicidades! Has acertado el número en ${intentos} intentos.`);
+    alert(`¡Felicidades! Has acertado el número en ${intentos} intentos.`);
     return true;
   } else if (numero < numeroAdivinar) {
-    console.log('El número que has introducido es menor.');
+    alert('El número que has introducido es menor.');
   } else {
-    console.log('El número que has introducido es mayor.');
+    alert('El número que has introducido es mayor.');
   }
 
   return false;
@@ -31,5 +31,5 @@ for (let i = 0; i < 3; i++) {
 }
 
 if (intentos === 3) {
-  console.log(`Lo siento, has agotado tus intentos. El número era ${numeroAdivinar}.`);
+  alert(`Lo siento, has agotado tus intentos. El número era ${numeroAdivinar}.`);
 }
