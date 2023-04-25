@@ -10,14 +10,18 @@ function pedirNumero() {
 function comprobarNumero(numero) {
   intentos++;
 
-  if (numero === numeroAdivinar) {
-    alert(`¡Felicidades! Has acertado el número en ${intentos} intentos.`);
-    return true;
-  } else if (numero < numeroAdivinar) {
+  if (numero < numeroAdivinar) {
     alert('El número que has introducido es menor.');
   } else {
     alert('El número que has introducido es mayor.');
-  } 
+  }
+  if (numero === numeroAdivinar) {
+    alert(`¡Felicidades! Has acertado el número en ${intentos} intentos.`);
+    return true;
+  } else if(intentos === 3) {
+    alert(`Has agotado tus intentos, el número era ${numeroAdivinar}.`);
+  }
+
 
   return false;
 }
@@ -28,7 +32,4 @@ for (let i = 0; i < 3; i++) {
   if (comprobarNumero(numero)) {
     break;
   }
-}
-if (intentos === 3) {
-  alert(`Has agotado tus intentos, el número era ${numeroAdivinar}.`);
 }
