@@ -31,5 +31,5 @@ for (let i = 0; i < 3; i++) {
 }
 
 if (intentos === 3) {
-  alert(`Lo siento, has agotado tus intentos. El número era ${numeroAdivinar}.`);
+  alert(`Has agotado tus intentos, el número era ${numeroAdivinar}.`);
 }
