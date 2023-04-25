@@ -17,9 +17,7 @@ function comprobarNumero(numero) {
     alert('El número que has introducido es menor.');
   } else {
     alert('El número que has introducido es mayor.');
-  } if (intentos === 3) {
-    alert(`Has agotado tus intentos, el número era ${numeroAdivinar}.`);
-  }
+  } 
 
   return false;
 }
@@ -30,4 +28,7 @@ for (let i = 0; i < 3; i++) {
   if (comprobarNumero(numero)) {
     break;
   }
+}
+if (intentos === 3) {
+  alert(`Has agotado tus intentos, el número era ${numeroAdivinar}.`);
 }
