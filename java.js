@@ -33,6 +33,3 @@ for (let i = 0; i < 3; i++) {
   }
 }
 
-if (intentos === 3) {
-  alert(`El número era ${numeroAdivinar}.`);
-}
