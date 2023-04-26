@@ -12,12 +12,15 @@ function comprobarNumero(numero) {
 
   if (numero === numeroAdivinar) {
     alert(`¡Felicidades! Has acertado el número en ${intentos} intentos.`);
+  if (intentos === 3 && numero != numeroAdivinar) {
+      alert(`Has agotado tus intentos, el numero era ${numeroAdivinar}.`);
+    }
     return true;
   } else if (numero < numeroAdivinar) {
     alert('El número que has introducido es menor.');
   } else {
     alert('El número que has introducido es mayor.');
-  }
+  } 
 
   return false;
 }
