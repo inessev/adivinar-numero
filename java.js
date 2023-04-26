@@ -31,5 +31,5 @@ for (let i = 0; i < 3; i++) {
 }
 
 if (intentos === 3) {
-  alert(`Has perdido, el número era ${numeroAdivinar}.`);
+  alert(`El número era ${numeroAdivinar}.`);
 }
